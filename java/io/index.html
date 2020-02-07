@@ -60,7 +60,7 @@
     <link rel="next" href="../java8/" />
     
     
-    <link rel="prev" href="../base/classloader.md" />
+    <link rel="prev" href="../jvm/classloader.html" />
     
 
     </head>
@@ -142,12 +142,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../collection/">
+        <li class="chapter " data-level="1.3.2" data-path="../thread/">
+            
+                <a href="../thread/">
+            
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../collection/">
             
                 <a href="../collection/">
             
                     
-                    容器
+                    collection
             
                 </a>
             
@@ -156,7 +169,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.2.1" data-path="../collection/list.html">
+        <li class="chapter " data-level="1.3.3.1" data-path="../collection/list.html">
             
                 <a href="../collection/list.html">
             
@@ -167,9 +180,10 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.3.2.2" data-path="../collection/hashmap.html">
+        <li class="chapter " data-level="1.3.3.1.1" data-path="../collection/hashmap.html">
             
                 <a href="../collection/hashmap.html">
             
@@ -187,12 +201,31 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../multithread/">
+
+            </ul>
             
-                <a href="../multithread/">
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../concurrent/">
+            
+                <a href="../concurrent/">
             
                     
-                    multithread
+                    concurrent
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../concurrent/基础.html">
+            
+                <a href="../concurrent/基础.html">
+            
+                    
+                    基础
             
                 </a>
             
@@ -200,7 +233,64 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../jvm/">
+        <li class="chapter " data-level="1.3.4.2" data-path="../concurrent/隐式锁.html">
+            
+                <a href="../concurrent/隐式锁.html">
+            
+                    
+                    隐式锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../concurrent/显式锁.html">
+            
+                <a href="../concurrent/显式锁.html">
+            
+                    
+                    显式锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../concurrent/线程池.html">
+            
+                <a href="../concurrent/线程池.html">
+            
+                    
+                    线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../concurrent/内存模型.html">
+            
+                <a href="../concurrent/内存模型.html">
+            
+                    
+                    内存模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../jvm/">
             
                 <a href="../jvm/">
             
@@ -214,7 +304,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.4.1" data-path="../jvm/gc.html">
+        <li class="chapter " data-level="1.3.5.1" data-path="../jvm/gc.html">
             
                 <a href="../jvm/gc.html">
             
@@ -225,11 +315,12 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.3.4.2" data-path="../base/classloader.md">
+        <li class="chapter " data-level="1.3.5.1.1" data-path="../jvm/classloader.html">
             
-                <span>
+                <a href="../jvm/classloader.html">
             
                     
                     类加载器
@@ -245,7 +336,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.5" data-path="./">
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6" data-path="./">
             
                 <a href="./">
             
@@ -258,7 +354,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="../java8/">
+        <li class="chapter " data-level="1.3.7" data-path="../java8/">
             
                 <a href="../java8/">
             
@@ -727,7 +823,7 @@
 
             
                 
-                <a href="../base/classloader.md" class="navigation navigation-prev " aria-label="Previous page: 类加载器">
+                <a href="../jvm/classloader.html" class="navigation navigation-prev " aria-label="Previous page: 类加载器">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -743,7 +839,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"io","level":"1.3.5","depth":2,"next":{"title":"java8特性","level":"1.3.6","depth":2,"path":"java/java8/README.md","ref":"java/java8/README.md","articles":[]},"previous":{"title":"类加载器","level":"1.3.4.2","depth":3,"path":"java/base/classloader.md","ref":"java/base/classloader.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/io/README.md","mtime":"2019-10-29T14:58:28.250Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-19T15:26:25.593Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"io","level":"1.3.6","depth":2,"next":{"title":"java8特性","level":"1.3.7","depth":2,"path":"java/java8/README.md","ref":"java/java8/README.md","articles":[]},"previous":{"title":"类加载器","level":"1.3.5.1.1","depth":4,"path":"java/jvm/classloader.md","ref":"java/jvm/classloader.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/io/README.md","mtime":"2020-02-01T00:34:35.693Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-07T13:05:18.212Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -751,10 +847,6 @@
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>

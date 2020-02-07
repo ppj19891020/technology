@@ -60,7 +60,7 @@
     <link rel="next" href="gc.html" />
     
     
-    <link rel="prev" href="../multithread/" />
+    <link rel="prev" href="../concurrent/内存模型.html" />
     
 
     </head>
@@ -142,12 +142,25 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../collection/">
+        <li class="chapter " data-level="1.3.2" data-path="../thread/">
+            
+                <a href="../thread/">
+            
+                    
+                    多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../collection/">
             
                 <a href="../collection/">
             
                     
-                    容器
+                    collection
             
                 </a>
             
@@ -156,7 +169,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.2.1" data-path="../collection/list.html">
+        <li class="chapter " data-level="1.3.3.1" data-path="../collection/list.html">
             
                 <a href="../collection/list.html">
             
@@ -167,9 +180,10 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.3.2.2" data-path="../collection/hashmap.html">
+        <li class="chapter " data-level="1.3.3.1.1" data-path="../collection/hashmap.html">
             
                 <a href="../collection/hashmap.html">
             
@@ -187,12 +201,31 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../multithread/">
+
+            </ul>
             
-                <a href="../multithread/">
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../concurrent/">
+            
+                <a href="../concurrent/">
             
                     
-                    multithread
+                    concurrent
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.4.1" data-path="../concurrent/基础.html">
+            
+                <a href="../concurrent/基础.html">
+            
+                    
+                    基础
             
                 </a>
             
@@ -200,7 +233,64 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.4" data-path="./">
+        <li class="chapter " data-level="1.3.4.2" data-path="../concurrent/隐式锁.html">
+            
+                <a href="../concurrent/隐式锁.html">
+            
+                    
+                    隐式锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.3" data-path="../concurrent/显式锁.html">
+            
+                <a href="../concurrent/显式锁.html">
+            
+                    
+                    显式锁
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.4" data-path="../concurrent/线程池.html">
+            
+                <a href="../concurrent/线程池.html">
+            
+                    
+                    线程池
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4.5" data-path="../concurrent/内存模型.html">
+            
+                <a href="../concurrent/内存模型.html">
+            
+                    
+                    内存模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.5" data-path="./">
             
                 <a href="./">
             
@@ -214,7 +304,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.4.1" data-path="gc.html">
+        <li class="chapter " data-level="1.3.5.1" data-path="gc.html">
             
                 <a href="gc.html">
             
@@ -225,11 +315,12 @@
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.3.4.2" data-path="../base/classloader.md">
+        <li class="chapter " data-level="1.3.5.1.1" data-path="classloader.html">
             
-                <span>
+                <a href="classloader.html">
             
                     
                     类加载器
@@ -245,7 +336,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="../io/">
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../io/">
             
                 <a href="../io/">
             
@@ -258,7 +354,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="../java8/">
+        <li class="chapter " data-level="1.3.7" data-path="../java8/">
             
                 <a href="../java8/">
             
@@ -573,13 +669,12 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="24-jvm">2.4 jvm</h1>
-<h2 id="241-java-&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x8DE8;&#x5E73;&#x53F0;">2.4.1 java &#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x8DE8;&#x5E73;&#x53F0;</h2>
+                                <h2 id="1-java-&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x8DE8;&#x5E73;&#x53F0;">1. java &#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x8DE8;&#x5E73;&#x53F0;</h2>
 <p>&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x7684; Java &#x6E90;&#x7801;&#xFF0C;&#x7F16;&#x8BD1;&#x540E;&#x4F1A;&#x751F;&#x6210;&#x4E00;&#x79CD; .class &#x6587;&#x4EF6;&#xFF0C;&#x79F0;&#x4E3A;&#x5B57;&#x8282;&#x7801;&#x6587;&#x4EF6;&#x3002;Java &#x865A;&#x62DF;&#x673A;&#xFF08;JVM&#xFF09;&#x5C31;&#x662F;&#x8D1F;&#x8D23;&#x5C06;&#x5B57;&#x8282;&#x7801;&#x6587;&#x4EF6;&#x7FFB;&#x8BD1;&#x6210;&#x7279;&#x5B9A;&#x5E73;&#x53F0;&#x4E0B;&#x7684;&#x673A;&#x5668;&#x7801;&#x7136;&#x540E;&#x8FD0;&#x884C;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x53EA;&#x8981;&#x5728;&#x4E0D;&#x540C;&#x5E73;&#x53F0;&#x4E0A;&#x5B89;&#x88C5;&#x5BF9;&#x5E94;&#x7684; JVM&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x5B57;&#x8282;&#x7801;&#x6587;&#x4EF6;&#xFF0C;&#x8FD0;&#x884C;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x7684; Java &#x7A0B;&#x5E8F;&#x3002;</p>
 <p>&#x800C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#xFF0C;&#x6211;&#x4EEC;&#x7F16;&#x5199;&#x7684; Java &#x7A0B;&#x5E8F;&#x6CA1;&#x6709;&#x505A;&#x4EFB;&#x4F55;&#x6539;&#x53D8;&#xFF0C;&#x4EC5;&#x4EC5;&#x662F;&#x901A;&#x8FC7; JVM &#x8FD9;&#x4E00; &#x201C;&#x4E2D;&#x95F4;&#x5C42;&#x201D; &#xFF0C;&#x5C31;&#x80FD;&#x5728;&#x4E0D;&#x540C;&#x5E73;&#x53F0;&#x4E0A;&#x8FD0;&#x884C;&#xFF0C;&#x771F;&#x6B63;&#x5B9E;&#x73B0;&#x4E86; &#x201C;&#x4E00;&#x6B21;&#x7F16;&#x8BD1;&#xFF0C;&#x5230;&#x5904;&#x8FD0;&#x884C;&#x201D; &#x7684;&#x76EE;&#x7684;&#x3002;</p>
-<h2 id="242-&#x4EC0;&#x4E48;&#x662F;-jvm-&#xFF1F;">2.4.2 &#x4EC0;&#x4E48;&#x662F; JVM &#xFF1F;</h2>
+<h2 id="2-&#x4EC0;&#x4E48;&#x662F;-jvm-&#xFF1F;">2. &#x4EC0;&#x4E48;&#x662F; JVM &#xFF1F;</h2>
 <p>JVM&#xFF0C;&#x5373; Java Virtual Machine&#xFF0C;Java &#x865A;&#x62DF;&#x673A;&#x3002;&#x5B83;&#x901A;&#x8FC7;&#x6A21;&#x62DF;&#x4E00;&#x4E2A;&#x8BA1;&#x7B97;&#x673A;&#x6765;&#x8FBE;&#x5230;&#x4E00;&#x4E2A;&#x8BA1;&#x7B97;&#x673A;&#x6240;&#x5177;&#x6709;&#x7684;&#x7684;&#x8BA1;&#x7B97;&#x529F;&#x80FD;&#x3002;JVM &#x80FD;&#x591F;&#x8DE8;&#x8BA1;&#x7B97;&#x673A;&#x4F53;&#x7CFB;&#x7ED3;&#x6784;&#x6765;&#x6267;&#x884C; Java &#x5B57;&#x8282;&#x7801;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x7531;&#x4E8E; JVM &#x5C4F;&#x853D;&#x4E86;&#x4E0E;&#x5404;&#x4E2A;&#x8BA1;&#x7B97;&#x673A;&#x5E73;&#x53F0;&#x76F8;&#x5173;&#x7684;&#x8F6F;&#x4EF6;&#x6216;&#x8005;&#x786C;&#x4EF6;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#xFF0C;&#x4F7F;&#x5F97;&#x4E0E;&#x5E73;&#x53F0;&#x76F8;&#x5173;&#x7684;&#x8026;&#x5408;&#x7EDF;&#x4E00;&#x7531; JVM &#x63D0;&#x4F9B;&#x8005;&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
-<h2 id="243-jvm-&#x7531;&#x54EA;&#x4E9B;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1F;">2.4.3 JVM &#x7531;&#x54EA;&#x4E9B;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1F;</h2>
+<h2 id="3-jvm-&#x7531;&#x54EA;&#x4E9B;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1F;">3. JVM &#x7531;&#x54EA;&#x4E9B;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1F;</h2>
 <p><img src="https://raw.githubusercontent.com/ppj19891020/pictures/master/baise/8.png"></p>
 <ul>
 <li>&#x7C7B;&#x52A0;&#x8F7D;&#x5668;&#xFF1A;&#x5728; JVM &#x542F;&#x52A8;&#x65F6;&#x6216;&#x8005;&#x7C7B;&#x8FD0;&#x884C;&#x65F6;&#x5C06;&#x9700;&#x8981;&#x7684; class &#x52A0;&#x8F7D;&#x5230; JVM &#x4E2D;</li>
@@ -596,7 +691,7 @@
 <li>&#x865A;&#x62DF;&#x673A;&#x6808;&#xFF08;&#x6808;&#x5185;&#x5B58;&#xFF09;&#xFF1A;Java&#x7EBF;&#x7A0B;&#x79C1;&#x6709;&#xFF0C;&#x865A;&#x62DF;&#x673A;&#x5C55;&#x63CF;&#x8FF0;&#x7684;&#x662F;Java&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x7684;&#x5185;&#x5B58;&#x6A21;&#x578B;&#xFF1A;&#x6BCF;&#x4E2A;&#x65B9;&#x6CD5;&#x5728;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x90FD;&#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6808;&#x5E27;&#x7528;&#x4E8E;&#x5B58;&#x50A8;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x3001;&#x64CD;&#x4F5C;&#x6570;&#x3001;&#x52A8;&#x6001;&#x94FE;&#x63A5;&#x3001;&#x65B9;&#x6CD5;&#x51FA;&#x53E3;&#x7B49;&#x4FE1;&#x606F;&#xFF1B;&#x6BCF;&#x4E2A;&#x65B9;&#x6CD5;&#x8C03;&#x7528;&#x90FD;&#x610F;&#x5473;&#x7740;&#x4E00;&#x4E2A;&#x6808;&#x5E27;&#x5728;&#x865A;&#x62DF;&#x673A;&#x6808;&#x4E2D;&#x5165;&#x6808;&#x5230;&#x51FA;&#x6808;&#x7684;&#x8FC7;&#x7A0B;&#xFF1B;</li>
 <li>&#x672C;&#x5730;&#x65B9;&#x6CD5;&#x6808; &#xFF1A;&#x548C;Java&#x865A;&#x62DF;&#x673A;&#x6808;&#x7684;&#x4F5C;&#x7528;&#x7C7B;&#x4F3C;&#xFF0C;&#x533A;&#x522B;&#x662F;&#x8BE5;&#x533A;&#x57DF;&#x4E3A; JVM &#x63D0;&#x4F9B;&#x4F7F;&#x7528; native &#x65B9;&#x6CD5;&#x7684;&#x670D;&#x52A1;</li>
 </ul>
-<h2 id="245-&#x5BF9;&#x8C61;&#x5206;&#x914D;&#x89C4;&#x5219;&#xFF1F;">2.4.5 &#x5BF9;&#x8C61;&#x5206;&#x914D;&#x89C4;&#x5219;&#xFF1F;</h2>
+<h2 id="5-&#x5BF9;&#x8C61;&#x5206;&#x914D;&#x89C4;&#x5219;&#xFF1F;">5. &#x5BF9;&#x8C61;&#x5206;&#x914D;&#x89C4;&#x5219;&#xFF1F;</h2>
 <ul>
 <li>&#x5BF9;&#x8C61;&#x4F18;&#x5148;&#x5206;&#x914D;&#x5728;Eden&#x533A;&#xFF0C;&#x5982;&#x679C;Eden&#x533A;&#x6CA1;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x7A7A;&#x95F4;&#x65F6;&#xFF0C;&#x865A;&#x62DF;&#x673A;&#x6267;&#x884C;&#x4E00;&#x6B21;Minor GC&#x3002;</li>
 <li>&#x5927;&#x5BF9;&#x8C61;&#x76F4;&#x63A5;&#x8FDB;&#x5165;&#x8001;&#x5E74;&#x4EE3;&#xFF08;&#x5927;&#x5BF9;&#x8C61;&#x662F;&#x6307;&#x9700;&#x8981;&#x5927;&#x91CF;&#x8FDE;&#x7EED;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x7684;&#x5BF9;&#x8C61;&#xFF09;&#x3002;&#x8FD9;&#x6837;&#x505A;&#x7684;&#x76EE;&#x7684;&#x662F;&#x907F;&#x514D;&#x5728;Eden&#x533A;&#x548C;&#x4E24;&#x4E2A;Survivor&#x533A;&#x4E4B;&#x95F4;&#x53D1;&#x751F;&#x5927;&#x91CF;&#x7684;&#x5185;&#x5B58;&#x62F7;&#x8D1D;&#xFF08;&#x65B0;&#x751F;&#x4EE3;&#x91C7;&#x7528;&#x590D;&#x5236;&#x7B97;&#x6CD5;&#x6536;&#x96C6;&#x5185;&#x5B58;&#xFF09;&#x3002;</li>
@@ -615,9 +710,9 @@
 </li>
 <li>&#x7A7A;&#x95F4;&#x5206;&#x914D;&#x62C5;&#x4FDD;&#x3002;&#x6BCF;&#x6B21;&#x8FDB;&#x884C;Minor GC&#x65F6;&#xFF0C;JVM&#x4F1A;&#x8BA1;&#x7B97;Survivor&#x533A;&#x79FB;&#x81F3;&#x8001;&#x5E74;&#x533A;&#x7684;&#x5BF9;&#x8C61;&#x7684;&#x5E73;&#x5747;&#x5927;&#x5C0F;&#xFF0C;&#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x503C;&#x5927;&#x4E8E;&#x8001;&#x5E74;&#x533A;&#x7684;&#x5269;&#x4F59;&#x503C;&#x5927;&#x5C0F;&#x5219;&#x8FDB;&#x884C;&#x4E00;&#x6B21;Full GC&#xFF0C;&#x5982;&#x679C;&#x5C0F;&#x4E8E;&#x68C0;&#x67E5;HandlePromotionFailure&#x8BBE;&#x7F6E;&#xFF0C;&#x5982;&#x679C;true&#x5219;&#x53EA;&#x8FDB;&#x884C;Monitor GC,&#x5982;&#x679C;false&#x5219;&#x8FDB;&#x884C;Full GC&#x3002;</li>
 </ul>
-<h2 id="246-java-&#x7684;&#x5185;&#x5B58;&#x6A21;&#x578B;">2.4.6 Java &#x7684;&#x5185;&#x5B58;&#x6A21;&#x578B;</h2>
+<h2 id="6-java-&#x7684;&#x5185;&#x5B58;&#x6A21;&#x578B;">6. Java &#x7684;&#x5185;&#x5B58;&#x6A21;&#x578B;</h2>
 <p>Java &#x5185;&#x5B58;&#x6A21;&#x578B;&#x89C4;&#x5B9A;&#x4E86;&#x6240;&#x6709;&#x7684;&#x53D8;&#x91CF;&#x90FD;&#x5B58;&#x50A8;&#x5728;&#x4E3B;&#x5185;&#x5B58;&#xFF08;Main Memory&#xFF09;&#x4E2D;&#x3002;&#x6BCF;&#x6761;&#x7EBF;&#x7A0B;&#x8FD8;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#xFF08;Working Memory&#xFF09;&#xFF0C;&#x7EBF;&#x7A0B;&#x7684;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x4E2D;&#x4FDD;&#x5B58;&#x4E86;&#x88AB;&#x8BE5;&#x7EBF;&#x7A0B;&#x4F7F;&#x7528;&#x5230;&#x7684;&#x53D8;&#x91CF;&#x7684;&#x4E3B;&#x5185;&#x5B58;&#x526F;&#x672C;&#x62F7;&#x8D1D;&#xFF0C;&#x7EBF;&#x7A0B;&#x5BF9;&#x53D8;&#x91CF;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#xFF08;&#x8BFB;&#x53D6;&#x3001;&#x8D4B;&#x503C;&#x7B49;&#xFF09;&#x90FD;&#x5FC5;&#x987B;&#x5728;&#x4E3B;&#x5185;&#x5B58;&#x4E2D;&#x8FDB;&#x884C;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x8BFB;&#x5199;&#x4E3B;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x4E5F;&#x65E0;&#x6CD5;&#x76F4;&#x63A5;&#x8BBF;&#x95EE;&#x5BF9;&#x65B9;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#xFF0C;&#x7EBF;&#x7A0B;&#x95F4;&#x7684;&#x53D8;&#x91CF;&#x503C;&#x7684;&#x4F20;&#x9012;&#x5747;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x4E3B;&#x5185;&#x5B58;&#x6765;&#x5B8C;&#x6210;&#x3002;</p>
-<h2 id="247-&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x662F;&#x5982;&#x4F55;&#x901A;&#x4FE1;&#x7684;&#x5462;&#xFF1F;">2.4.7 &#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x662F;&#x5982;&#x4F55;&#x901A;&#x4FE1;&#x7684;&#x5462;&#xFF1F;</h2>
+<h2 id="7-&#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x662F;&#x5982;&#x4F55;&#x901A;&#x4FE1;&#x7684;&#x5462;&#xFF1F;">7. &#x4E24;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x662F;&#x5982;&#x4F55;&#x901A;&#x4FE1;&#x7684;&#x5462;&#xFF1F;</h2>
 <p>&#x5728;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x7684;&#x5E76;&#x53D1;&#x6A21;&#x578B;&#x91CC;&#xFF0C;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x5171;&#x4EAB;&#x7A0B;&#x5E8F;&#x7684;&#x516C;&#x5171;&#x72B6;&#x6001;&#xFF0C;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x901A;&#x8FC7;&#x5199;-&#x8BFB;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x516C;&#x5171;&#x72B6;&#x6001;&#x6765;&#x9690;&#x5F0F;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x5178;&#x578B;&#x7684;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x901A;&#x4FE1;&#x65B9;&#x5F0F;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x5171;&#x4EAB;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x3002;
 <img src="https://raw.githubusercontent.com/ppj19891020/pictures/master/baise/11.png" height="400"></p>
 <p>&#x4F8B;&#x5982;&#x4E0A;&#x56FE;&#x7EBF;&#x7A0B; A &#x4E0E; &#x7EBF;&#x7A0B; B &#x4E4B;&#x95F4;&#x5982;&#x679C;&#x8981;&#x901A;&#x4FE1;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x5FC5;&#x987B;&#x7ECF;&#x5386;&#x4E0B;&#x9762;&#x4E24;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;</p>
@@ -626,10 +721,10 @@
 <li>2.&#x7136;&#x540E;&#xFF0C;&#x7EBF;&#x7A0B; B &#x5230;&#x4E3B;&#x5185;&#x5B58;&#x4E2D;&#x53BB;&#x8BFB;&#x53D6;&#x7EBF;&#x7A0B; A &#x4E4B;&#x524D;&#x66F4;&#x65B0;&#x8FC7;&#x7684;&#x5171;&#x4EAB;&#x53D8;&#x91CF;</li>
 </ul>
 <p>&#x5728;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x7684;&#x5E76;&#x53D1;&#x6A21;&#x578B;&#x91CC;&#xFF0C;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x6CA1;&#x6709;&#x516C;&#x5171;&#x72B6;&#x6001;&#xFF0C;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x660E;&#x786E;&#x7684;&#x53D1;&#x9001;&#x6D88;&#x606F;&#x6765;&#x663E;&#x5F0F;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#xFF0C;&#x5728; Java &#x4E2D;&#x5178;&#x578B;&#x7684;&#x6D88;&#x606F;&#x4F20;&#x9012;&#x65B9;&#x5F0F;&#x5C31;&#x662F; wait() &#x548C; notify()&#x3002;</p>
-<h2 id="248-&#x5185;&#x5B58;&#x5C4F;&#x969C;&#x4E3A;&#x4F55;&#x91CD;&#x8981;&#x6307;&#x4EE4;&#x91CD;&#x6392;&#x5E8F;&#xFF1F;">2.4.8 &#x5185;&#x5B58;&#x5C4F;&#x969C;&#x4E3A;&#x4F55;&#x91CD;&#x8981;(&#x6307;&#x4EE4;&#x91CD;&#x6392;&#x5E8F;)&#xFF1F;</h2>
+<h2 id="8-&#x5185;&#x5B58;&#x5C4F;&#x969C;&#x4E3A;&#x4F55;&#x91CD;&#x8981;&#x6307;&#x4EE4;&#x91CD;&#x6392;&#x5E8F;&#xFF1F;">8. &#x5185;&#x5B58;&#x5C4F;&#x969C;&#x4E3A;&#x4F55;&#x91CD;&#x8981;(&#x6307;&#x4EE4;&#x91CD;&#x6392;&#x5E8F;)&#xFF1F;</h2>
 <p>&#x5185;&#x5B58;&#x5C4F;&#x969C;&#xFF0C;&#x53C8;&#x79F0;&#x5185;&#x5B58;&#x6805;&#x680F;&#xFF0C;&#x662F;&#x4E00;&#x7EC4;&#x5904;&#x7406;&#x5668;&#x6307;&#x4EE4;&#xFF0C;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x5BF9;&#x5185;&#x5B58;&#x64CD;&#x4F5C;&#x7684;&#x987A;&#x5E8F;&#x9650;&#x5236;&#x3002;</p>
 <p>&#x5BF9;&#x4E3B;&#x5B58;&#x7684;&#x4E00;&#x6B21;&#x8BBF;&#x95EE;&#x4E00;&#x822C;&#x82B1;&#x8D39;&#x786C;&#x4EF6;&#x7684;&#x6570;&#x767E;&#x6B21;&#x65F6;&#x949F;&#x5468;&#x671F;&#x3002;&#x5904;&#x7406;&#x5668;&#x901A;&#x8FC7;&#x7F13;&#x5B58;&#xFF08;caching&#xFF09;&#x80FD;&#x591F;&#x4ECE;&#x6570;&#x91CF;&#x7EA7;&#x4E0A;&#x964D;&#x4F4E;&#x5185;&#x5B58;&#x5EF6;&#x8FDF;&#x7684;&#x6210;&#x672C;&#x8FD9;&#x4E9B;&#x7F13;&#x5B58;&#x4E3A;&#x4E86;&#x6027;&#x80FD;&#x91CD;&#x65B0;&#x6392;&#x5217;&#x5F85;&#x5B9A;&#x5185;&#x5B58;&#x64CD; &#x4F5C;&#x7684;&#x987A;&#x5E8F;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x7A0B;&#x5E8F;&#x7684;&#x8BFB;&#x5199;&#x64CD;&#x4F5C;&#x4E0D;&#x4E00;&#x5B9A;&#x4F1A;&#x6309;&#x7167;&#x5B83;&#x8981;&#x6C42;&#x5904;&#x7406;&#x5668;&#x7684;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x3002;&#x5F53;&#x6570;&#x636E;&#x662F;&#x4E0D;&#x53EF;&#x53D8;&#x7684;&#xFF0C;&#x540C;&#x65F6;/&#x6216;&#x8005;&#x6570;&#x636E;&#x9650;&#x5236;&#x5728;&#x7EBF;&#x7A0B;&#x8303;&#x56F4;&#x5185;&#xFF0C;&#x8FD9;&#x4E9B;&#x4F18;&#x5316;&#x662F;&#x65E0;&#x5BB3;&#x7684;&#x3002;&#x5982;&#x679C;&#x628A; &#x8FD9;&#x4E9B;&#x4F18;&#x5316;&#x4E0E;&#x5BF9;&#x79F0;&#x591A;&#x5904;&#x7406;&#xFF08;symmetric multi-processing&#xFF09;&#x548C;&#x5171;&#x4EAB;&#x53EF;&#x53D8;&#x72B6;&#x6001;&#xFF08;shared mutable state&#xFF09;&#x7ED3;&#x5408;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x662F;&#x4E00;&#x573A;&#x5669;&#x68A6;&#x3002;&#x5F53;&#x57FA;&#x4E8E;&#x5171;&#x4EAB;&#x53EF;&#x53D8;&#x72B6;&#x6001;&#x7684;&#x5185;&#x5B58;&#x64CD;&#x4F5C;&#x88AB;&#x91CD;&#x65B0;&#x6392;&#x5E8F;&#x65F6;&#xFF0C;&#x7A0B;&#x5E8F;&#x53EF;&#x80FD;&#x884C;&#x4E3A;&#x4E0D;&#x5B9A;&#x3002;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x5199;&#x5165;&#x7684;&#x6570;&#x636E;&#x53EF;&#x80FD;&#x88AB;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x53EF;&#x89C1;&#xFF0C;&#x539F;&#x56E0;&#x662F;&#x6570;&#x636E; &#x5199;&#x5165;&#x7684;&#x987A;&#x5E8F;&#x4E0D;&#x4E00;&#x81F4;&#x3002;&#x9002;&#x5F53;&#x7684;&#x653E;&#x7F6E;&#x5185;&#x5B58;&#x5C4F;&#x969C;&#x901A;&#x8FC7;&#x5F3A;&#x5236;&#x5904;&#x7406;&#x5668;&#x987A;&#x5E8F;&#x6267;&#x884C;&#x5F85;&#x5B9A;&#x7684;&#x5185;&#x5B58;&#x64CD;&#x4F5C;&#x6765;&#x907F;&#x514D;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p>
-<h2 id="249-&#x7C7B;&#x4F3C;-xms&#x3001;-xmn&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#xFF1A;">2.4.9 &#x7C7B;&#x4F3C;-Xms&#x3001;-Xmn&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#xFF1A;</h2>
+<h2 id="9-&#x7C7B;&#x4F3C;-xms&#x3001;-xmn&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#xFF1A;">9. &#x7C7B;&#x4F3C;-Xms&#x3001;-Xmn&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#xFF1A;</h2>
 <p>&#x5806;&#x5185;&#x5B58;&#x5206;&#x914D;&#xFF1A;</p>
 <ul>
 <li>JVM&#x521D;&#x59CB;&#x5206;&#x914D;&#x7684;&#x5185;&#x5B58;&#x7531;-Xms&#x6307;&#x5B9A;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x7269;&#x7406;&#x5185;&#x5B58;&#x7684;1/64</li>
@@ -644,7 +739,7 @@
 <li>-Xmn2G&#xFF1A;&#x8BBE;&#x7F6E;&#x5E74;&#x8F7B;&#x4EE3;&#x5927;&#x5C0F;&#x4E3A;2G&#x3002;</li>
 <li>-XX:SurvivorRatio&#xFF0C;&#x8BBE;&#x7F6E;&#x5E74;&#x8F7B;&#x4EE3;&#x4E2D;Eden&#x533A;&#x4E0E;Survivor&#x533A;&#x7684;&#x6BD4;&#x503C;&#x3002;</li>
 </ul>
-<h2 id="2410-&#x5185;&#x5B58;&#x6CC4;&#x6F0F;&#x548C;&#x5185;&#x5B58;&#x6EA2;&#x51FA;">2.4.10 &#x5185;&#x5B58;&#x6CC4;&#x6F0F;&#x548C;&#x5185;&#x5B58;&#x6EA2;&#x51FA;</h2>
+<h2 id="10-&#x5185;&#x5B58;&#x6CC4;&#x6F0F;&#x548C;&#x5185;&#x5B58;&#x6EA2;&#x51FA;">10. &#x5185;&#x5B58;&#x6CC4;&#x6F0F;&#x548C;&#x5185;&#x5B58;&#x6EA2;&#x51FA;</h2>
 <p>&#x6982;&#x5FF5;&#xFF1A;</p>
 <ul>
 <li>&#x5185;&#x5B58;&#x6EA2;&#x51FA;&#x6307;&#x7684;&#x662F;&#x5185;&#x5B58;&#x4E0D;&#x591F;&#x7528;&#x4E86;&#x3002;</li>
@@ -656,14 +751,14 @@
 <li>&#x957F;&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x5BF9;&#x8C61;&#x5F15;&#x7528;&#x77ED;&#x751F;&#x547D;&#x5468;&#x671F;&#x7684;&#x5BF9;&#x8C61;</li>
 <li>&#x6CA1;&#x6709;&#x5C06;&#x65E0;&#x7528;&#x5BF9;&#x8C61;&#x7F6E;&#x4E3A;null</li>
 </ul>
-<h2 id="2411-&#x5BF9;&#x8C61;&#x7684;&#x5185;&#x5B58;&#x5E03;&#x5C40;&#x662F;&#x600E;&#x6837;&#x7684;&#xFF1F;">2.4.11 &#x5BF9;&#x8C61;&#x7684;&#x5185;&#x5B58;&#x5E03;&#x5C40;&#x662F;&#x600E;&#x6837;&#x7684;&#xFF1F;</h2>
+<h2 id="11-&#x5BF9;&#x8C61;&#x7684;&#x5185;&#x5B58;&#x5E03;&#x5C40;&#x662F;&#x600E;&#x6837;&#x7684;&#xFF1F;">11. &#x5BF9;&#x8C61;&#x7684;&#x5185;&#x5B58;&#x5E03;&#x5C40;&#x662F;&#x600E;&#x6837;&#x7684;&#xFF1F;</h2>
 <p>&#x5BF9;&#x8C61;&#x7684;&#x5185;&#x5B58;&#x5E03;&#x5C40;&#x5305;&#x62EC;&#x4E09;&#x4E2A;&#x90E8;&#x5206;&#xFF1A;&#x5BF9;&#x8C61;&#x5934;&#xFF0C;&#x5B9E;&#x4F8B;&#x6570;&#x636E;&#x548C;&#x5BF9;&#x9F50;&#x586B;&#x5145;&#x3002;</p>
 <ul>
 <li>&#x5BF9;&#x8C61;&#x5934;&#xFF1A;&#x5BF9;&#x8C61;&#x5934;&#x5305;&#x62EC;&#x4E24;&#x90E8;&#x5206;&#x4FE1;&#x606F;&#xFF0C;&#x7B2C;&#x4E00;&#x90E8;&#x5206;&#x662F;&#x5B58;&#x50A8;&#x5BF9;&#x8C61;&#x81EA;&#x8EAB;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x54C8;&#x5E0C;&#x7801;&#xFF0C;GC&#x5206;&#x4EE3;&#x5E74;&#x9F84;&#xFF0C;&#x9501;&#x72B6;&#x6001;&#x6807;&#x5FD7;&#xFF0C;&#x7EBF;&#x7A0B;&#x6301;&#x6709;&#x7684;&#x9501;&#x7B49;&#x7B49;&#x3002;&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#x662F;&#x7C7B;&#x578B;&#x6307;&#x9488;&#xFF0C;&#x5373;&#x5BF9;&#x8C61;&#x6307;&#x5411;&#x7C7B;&#x5143;&#x6570;&#x636E;&#x7684;&#x6307;&#x9488;&#x3002;</li>
 <li>&#x5B9E;&#x4F8B;&#x6570;&#x636E;&#xFF1A;&#x5C31;&#x662F;&#x6570;&#x636E;&#x5566;</li>
 <li>&#x5BF9;&#x9F50;&#x586B;&#x5145;&#xFF1A;&#x4E0D;&#x662F;&#x5FC5;&#x7136;&#x7684;&#x5B58;&#x5728;&#xFF0C;&#x5C31;&#x662F;&#x4E3A;&#x4E86;&#x5BF9;&#x9F50;&#x7684;&#x561B;</li>
 </ul>
-<h2 id="2412-&#x5BF9;&#x8C61;&#x662F;&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x8BBF;&#x95EE;&#x7684;&#xFF1F;">2.4.12 &#x5BF9;&#x8C61;&#x662F;&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x8BBF;&#x95EE;&#x7684;&#xFF1F;</h2>
+<h2 id="12-&#x5BF9;&#x8C61;&#x662F;&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x8BBF;&#x95EE;&#x7684;&#xFF1F;">12. &#x5BF9;&#x8C61;&#x662F;&#x5982;&#x4F55;&#x5B9A;&#x4F4D;&#x8BBF;&#x95EE;&#x7684;&#xFF1F;</h2>
 <p>&#x5BF9;&#x8C61;&#x7684;&#x8BBF;&#x95EE;&#x5B9A;&#x4F4D;&#x6709;&#x4E24;&#x79CD;&#xFF1A;&#x53E5;&#x67C4;&#x5B9A;&#x4F4D;&#x548C;&#x76F4;&#x63A5;&#x6307;&#x9488;</p>
 <ul>
 <li>&#x53E5;&#x67C4;&#x5B9A;&#x4F4D;&#xFF1A;Java &#x5806;&#x4F1A;&#x753B;&#x51FA;&#x4E00;&#x5757;&#x5185;&#x5B58;&#x6765;&#x4F5C;&#x4E3A;&#x53E5;&#x67C4;&#x6C60;&#xFF0C;reference&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x5C31;&#x662F;
@@ -674,15 +769,15 @@
 <li>&#x76F4;&#x63A5;&#x6307;&#x9488;&#x8BBF;&#x95EE;&#xFF1A;java&#x5806;&#x5BF9;&#x8C61;&#x7684;&#x4E0D;&#x5C45;&#x4E2D;&#x5C31;&#x5FC5;&#x987B;&#x8003;&#x8651;&#x5982;&#x4F55;&#x653E;&#x7F6E;&#x8BBF;&#x95EE;&#x7C7B;&#x578B;&#x6570;&#x636E;&#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x800C;reference&#x4E2D;&#x5B58;&#x50A8;&#x7684;&#x76F4;&#x63A5;&#x5C31;&#x662F;&#x5BF9;&#x8C61;&#x5730;&#x5740;
 <img src="https://raw.githubusercontent.com/ppj19891020/pictures/master/baise/13.png" height="400"></li>
 </ul>
-<h2 id="2413-&#x5728;64&#x4F4D;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;int&#x7684;&#x957F;&#x5EA6;&#x662F;&#x591A;&#x5C11;&#xFF1F;">2.4.13 &#x5728;64&#x4F4D;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;int&#x7684;&#x957F;&#x5EA6;&#x662F;&#x591A;&#x5C11;&#xFF1F;</h2>
+<h2 id="13-&#x5728;64&#x4F4D;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;int&#x7684;&#x957F;&#x5EA6;&#x662F;&#x591A;&#x5C11;&#xFF1F;">13. &#x5728;64&#x4F4D;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;int&#x7684;&#x957F;&#x5EA6;&#x662F;&#x591A;&#x5C11;&#xFF1F;</h2>
 <p>Java &#x4E2D;&#xFF0C;int &#x7C7B;&#x578B;&#x53D8;&#x91CF;&#x7684;&#x957F;&#x5EA6;&#x662F;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x503C;&#xFF0C;&#x4E0E;&#x5E73;&#x53F0;&#x65E0;&#x5173;&#xFF0C;&#x90FD;&#x662F; 32 &#x4F4D;&#x6216;&#x8005; 4 &#x4E2A;&#x5B57;&#x8282;&#x3002;&#x610F;&#x601D;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5728; 32 &#x4F4D; &#x548C; 64 &#x4F4D; &#x7684;Java &#x865A;&#x62DF;&#x673A;&#x4E2D;&#xFF0C;int &#x7C7B;&#x578B;&#x7684;&#x957F;&#x5EA6;&#x662F;&#x76F8;&#x540C;&#x7684;&#x3002;</p>
-<h2 id="2414-32-&#x4F4D;-jvm-&#x548C;-64-&#x4F4D;-jvm-&#x7684;&#x6700;&#x5927;&#x5806;&#x5185;&#x5B58;&#x5206;&#x522B;&#x662F;&#x591A;&#x6570;&#xFF1F;">2.4.14 32 &#x4F4D; JVM &#x548C; 64 &#x4F4D; JVM &#x7684;&#x6700;&#x5927;&#x5806;&#x5185;&#x5B58;&#x5206;&#x522B;&#x662F;&#x591A;&#x6570;&#xFF1F;</h2>
+<h2 id="14-32-&#x4F4D;-jvm-&#x548C;-64-&#x4F4D;-jvm-&#x7684;&#x6700;&#x5927;&#x5806;&#x5185;&#x5B58;&#x5206;&#x522B;&#x662F;&#x591A;&#x6570;&#xFF1F;">14. 32 &#x4F4D; JVM &#x548C; 64 &#x4F4D; JVM &#x7684;&#x6700;&#x5927;&#x5806;&#x5185;&#x5B58;&#x5206;&#x522B;&#x662F;&#x591A;&#x6570;&#xFF1F;</h2>
 <p>&#x7406;&#x8BBA;&#x4E0A;&#x8BF4;&#x4E0A; 32 &#x4F4D;&#x7684; JVM &#x5806;&#x5185;&#x5B58;&#x53EF;&#x4EE5;&#x5230;&#x8FBE; 2^32&#xFF0C;&#x5373; 4GB&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;&#x4F1A;&#x6BD4;&#x8FD9;&#x4E2A;&#x5C0F;&#x5F88;&#x591A;&#x3002;&#x4E0D;&#x540C;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x4E4B;&#x95F4;&#x4E0D;&#x540C;&#xFF0C;&#x5982; Windows &#x7CFB;&#x7EDF;&#x5927;&#x7EA6; 1.5 GB&#xFF0C;Solaris &#x5927;&#x7EA6; 3GB&#x3002;64 &#x4F4D; JVM&#x5141;&#x8BB8;&#x6307;&#x5B9A;&#x6700;&#x5927;&#x7684;&#x5806;&#x5185;&#x5B58;&#xFF0C;&#x7406;&#x8BBA;&#x4E0A;&#x53EF;&#x4EE5;&#x8FBE;&#x5230; 2^64&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x5927;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x4F60;&#x53EF;&#x4EE5;&#x6307;&#x5B9A;&#x5806;&#x5185;&#x5B58;&#x5927;&#x5C0F;&#x5230; 100GB&#x3002;&#x751A;&#x81F3;&#x6709;&#x7684; JVM&#xFF0C;&#x5982; Azul&#xFF0C;&#x5806;&#x5185;&#x5B58;&#x5230; 1000G &#x90FD;&#x662F;&#x53EF;&#x80FD;&#x7684;&#x3002;</p>
-<h2 id="2415-&#x4F60;&#x80FD;&#x4FDD;&#x8BC1;-gc-&#x6267;&#x884C;&#x5417;&#xFF1F;">2.4.15 &#x4F60;&#x80FD;&#x4FDD;&#x8BC1; GC &#x6267;&#x884C;&#x5417;&#xFF1F;</h2>
+<h2 id="15-&#x4F60;&#x80FD;&#x4FDD;&#x8BC1;-gc-&#x6267;&#x884C;&#x5417;&#xFF1F;">15. &#x4F60;&#x80FD;&#x4FDD;&#x8BC1; GC &#x6267;&#x884C;&#x5417;&#xFF1F;</h2>
 <p>&#x4E0D;&#x80FD;&#xFF0C;&#x867D;&#x7136;&#x4F60;&#x53EF;&#x4EE5;&#x8C03;&#x7528; System.gc() &#x6216;&#x8005; Runtime.gc()&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#x4FDD;&#x8BC1; GC &#x7684;&#x6267;&#x884C;&#x3002;</p>
-<h2 id="2416-java-&#x4E2D;&#x5806;&#x548C;&#x6808;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;">2.4.16 Java &#x4E2D;&#x5806;&#x548C;&#x6808;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;</h2>
+<h2 id="16-java-&#x4E2D;&#x5806;&#x548C;&#x6808;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;">16. Java &#x4E2D;&#x5806;&#x548C;&#x6808;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#xFF1F;</h2>
 <p>JVM &#x4E2D;&#x5806;&#x548C;&#x6808;&#x5C5E;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x5185;&#x5B58;&#x533A;&#x57DF;&#xFF0C;&#x4F7F;&#x7528;&#x76EE;&#x7684;&#x4E5F;&#x4E0D;&#x540C;&#x3002;&#x6808;&#x5E38;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x65B9;&#x6CD5;&#x5E27;&#x548C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#xFF0C;&#x800C;&#x5BF9;&#x8C61;&#x603B;&#x662F;&#x5728;&#x5806;&#x4E0A;&#x5206;&#x914D;&#x3002;&#x6808;&#x901A;&#x5E38;&#x90FD;&#x6BD4;&#x5806;&#x5C0F;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x5728;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x5171;&#x4EAB;&#xFF0C;&#x800C;&#x5806;&#x88AB;&#x6574;&#x4E2A; JVM &#x7684;&#x6240;&#x6709;&#x7EBF;&#x7A0B;&#x5171;&#x4EAB;&#x3002;</p>
-<h2 id="2417-&#x7C7B;&#x4F3C;-xms&#x3001;-xmn-&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#xFF1F;">2.4.17 &#x7C7B;&#x4F3C;-Xms&#x3001;-Xmn &#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#xFF1F;</h2>
+<h2 id="17-&#x7C7B;&#x4F3C;-xms&#x3001;-xmn-&#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#xFF1F;">17. &#x7C7B;&#x4F3C;-Xms&#x3001;-Xmn &#x8FD9;&#x4E9B;&#x53C2;&#x6570;&#x7684;&#x542B;&#x4E49;&#xFF1F;</h2>
 <ul>
 <li>JVM &#x521D;&#x59CB;&#x5206;&#x914D;&#x7684;&#x5185;&#x5B58;&#x7531;-Xms &#x6307;&#x5B9A;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x7269;&#x7406;&#x5185;&#x5B58;&#x7684; 1/64&#xFF1B;</li>
 <li>JVM &#x6700;&#x5927;&#x5206;&#x914D;&#x7684;&#x5185;&#x5B58;&#x7531;-Xmx &#x6307;&#x5B9A;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x7269;&#x7406;&#x5185;&#x5B58;&#x7684; 1/4&#xFF1B;</li>
@@ -695,6 +790,44 @@
 <li>&#x7531; XX:MaxPermSize &#x8BBE;&#x7F6E;&#x6700;&#x5927;&#x975E;&#x5806;&#x5185;&#x5B58;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x7269;&#x7406;&#x5185;&#x5B58;&#x7684; 1/4&#xFF1B;</li>
 <li>-Xmn2G&#xFF1A;&#x8BBE;&#x7F6E;&#x5E74;&#x8F7B;&#x4EE3;&#x5927;&#x5C0F;&#x4E3A; 2G&#xFF1B;</li>
 <li>-XX:SurvivorRatio&#xFF0C;&#x8BBE;&#x7F6E;&#x5E74;&#x8F7B;&#x4EE3;&#x4E2D; Eden &#x533A;&#x4E0E; Survivor &#x533A;&#x7684;&#x6BD4;&#x503C;&#x3002;</li>
+</ul>
+<h2 id="18safepoint-&#x662F;&#x4EC0;&#x4E48;">18.SafePoint &#x662F;&#x4EC0;&#x4E48;</h2>
+<p>&#x6BD4;&#x5982; GC &#x7684;&#x65F6;&#x5019;&#x5FC5;&#x987B;&#x8981;&#x7B49;&#x5230; Java &#x7EBF;&#x7A0B;&#x90FD;&#x8FDB;&#x5165;&#x5230; safepoint &#x7684;&#x65F6;&#x5019; VMThread &#x624D;&#x80FD;&#x5F00;&#x59CB; &#x6267;&#x884C; GC&#xFF0C; </p>
+<ul>
+<li>&#x5FAA;&#x73AF;&#x7684;&#x672B;&#x5C3E; (&#x9632;&#x6B62;&#x5927;&#x5FAA;&#x73AF;&#x7684;&#x65F6;&#x5019;&#x4E00;&#x76F4;&#x4E0D;&#x8FDB;&#x5165; safepoint&#xFF0C;&#x800C;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x5728;&#x7B49;&#x5F85;&#x5B83;&#x8FDB;&#x5165; safepoint) </li>
+<li>&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x524D;</li>
+<li>&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x7684;call&#x4E4B;&#x540E; </li>
+<li>&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x7684;&#x4F4D;&#x7F6E; </li>
+</ul>
+<h2 id="19-&#x51E0;&#x79CD;&#x5E38;&#x7528;&#x7684;&#x5185;&#x5B58;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;">19. &#x51E0;&#x79CD;&#x5E38;&#x7528;&#x7684;&#x5185;&#x5B58;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;</h2>
+<p>jmap&#x3001;jstack&#x3001;jhat&#x3001;jstat</p>
+<ul>
+<li><p>jstack: &#x53EF;&#x4EE5;&#x770B;&#x5F53;&#x524D;&#x6808;&#x7684;&#x60C5;&#x51B5;</p>
+<blockquote>
+<p>&#x67E5;&#x770B;&#x7EBF;&#x7A0B;&#x4FE1;&#x606F;&#xFF1A;jstack  [pid]</p>
+</blockquote>
+</li>
+<li><p>jmap:&#x67E5;&#x770B;&#x5185;&#x5B58;</p>
+<blockquote>
+<p>&#x67E5;&#x770B;&#x5F53;&#x524D;&#x5185;&#x5B58;&#x5BF9;&#x8C61;&#xFF1A;jmap -histo [pid]</p>
+<p>dump&#x5185;&#x5B58;&#x6570;&#x636E;&#xFF1A; jmap -dump:format=b,file=[file] [pid]</p>
+</blockquote>
+</li>
+<li><p>jstat:&#x76D1;&#x63A7;&#x5185;&#x5B58;&#x60C5;&#x51B5;</p>
+<blockquote>
+<p>jstat -gc [pid] [&#x65F6;&#x95F4;&#x95F4;&#x9694;ms]</p>
+</blockquote>
+</li>
+<li><p>jinfo:&#x53EF;&#x4EE5;&#x8F93;&#x51FA;&#x5E76;&#x4FEE;&#x6539;&#x8FD0;&#x884C;&#x65F6;&#x7684;java &#x8FDB;&#x7A0B;&#x7684;opts&#x3002;</p>
+<blockquote>
+<p>jinfo -flag MaxPermSize [pid]</p>
+</blockquote>
+</li>
+<li><p>Jhat:&#x7528;&#x4E8E;&#x5BF9;JAVA heap&#x8FDB;&#x884C;&#x79BB;&#x7EBF;&#x5206;&#x6790;&#x7684;&#x5DE5;&#x5177;&#xFF0C;&#x4ED6;&#x53EF;&#x4EE5;&#x5BF9;&#x4E0D;&#x540C;&#x865A;&#x62DF;&#x673A;&#x4E2D;&#x5BFC;&#x51FA;&#x7684;heap&#x4FE1;&#x606F;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5206;&#x6790;</p>
+<blockquote>
+<p>Jhat [file]</p>
+</blockquote>
+</li>
 </ul>
 
                                 
@@ -723,7 +856,7 @@
 
             
                 
-                <a href="../multithread/" class="navigation navigation-prev " aria-label="Previous page: multithread">
+                <a href="../concurrent/内存模型.html" class="navigation navigation-prev " aria-label="Previous page: 内存模型">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
@@ -739,7 +872,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"jvm","level":"1.3.4","depth":2,"next":{"title":"GC","level":"1.3.4.1","depth":3,"path":"java/jvm/gc.md","ref":"java/jvm/gc.md","articles":[]},"previous":{"title":"multithread","level":"1.3.3","depth":2,"path":"java/multithread/README.md","ref":"java/multithread/README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/jvm/README.md","mtime":"2019-10-30T11:15:39.973Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-19T15:26:25.593Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"jvm","level":"1.3.5","depth":2,"next":{"title":"GC","level":"1.3.5.1","depth":3,"path":"java/jvm/gc.md","ref":"java/jvm/gc.md","articles":[{"title":"类加载器","level":"1.3.5.1.1","depth":4,"path":"java/jvm/classloader.md","ref":"java/jvm/classloader.md","articles":[]}]},"previous":{"title":"内存模型","level":"1.3.4.5","depth":3,"path":"java/concurrent/内存模型.md","ref":"java/concurrent/内存模型.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"java/jvm/README.md","mtime":"2019-11-26T00:29:16.435Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-07T13:05:18.212Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -747,10 +880,6 @@
         
     <script src="../../gitbook/gitbook.js"></script>
     <script src="../../gitbook/theme.js"></script>
-    
-        
-        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
-        
     
         
         <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
